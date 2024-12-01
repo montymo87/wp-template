@@ -1,4 +1,4 @@
-# Welcome to glivera-webpack-boilerplate
+# Welcome to webpack-boilerplate
 
 ## Get started
 
@@ -10,18 +10,12 @@
 
 3. Let's code!
 
-- `npm run dev` - File watching + server
-- `npm run dev-build` - Build (development mode) + file watching
-- `npm run build` - Build (production mode)
-- `npm run build-preview` - Build + dev widget (production mode)
-- `npm run wp-build` - Copies the files (css/js/fonts/static) to wp_theme directory
+- `npm run wp-dev`
 
 ## Template structure
 
 ```
-build                        # Production build
 dist                         # Dev build
-public                       # Production WP build
 helpers                      # All type samples and plugins
 ├── components               # Samples
 ├── components_vanilla       # Vanilla js helpers
@@ -41,13 +35,6 @@ src                          # Sources
 │   ├── utils                # Constants, helpers functions
 │   ├── vendors              # Libriaries, plugins template
 │   ├── app.js             	 # Global layout combining layout and page scripts
-├── pug                      # Layout templates
-│   ├── blocks               # Layout of components
-│   │   ├── universal        # Layout of universal components
-│   ├── layout               # Page layout
-│   ├── pages                # Page templates
-│   ├── templates            # Base mixins, data arrays and variables for *.pug
-│   │   ├── mixins           # Mixins used in project
 ├── scss                     # Styles template
 │   ├── base                 # Styles for base elements, resets, fonts
 │   ├── components           # Styles for components
@@ -77,6 +64,5 @@ readme.md                    # Documentation template
 
 **File naming:**
 Kebab-case for all files - foo-bar-baz.ex
-For pug mixins - m-foo-bar-baz.pug
 
 #

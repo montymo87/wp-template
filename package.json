@@ -4,12 +4,6 @@
 	"version": "1.0.0",
 	"description": "Webpack 5, pug, scss, svg sprite template",
 	"scripts": {
-		"dev": "cross-env NODE_ENV=development webpack serve --config settings/webpack.dev.config.js --mode=development",
-		"dev-build": "cross-env NODE_ENV=development webpack --config settings/webpack.dev.config.js --mode=development --watch",
-		"dev-build-deploy": "cross-env NODE_ENV=development webpack --config settings/webpack.dev.config.js --mode=development",
-		"build": "cross-env NODE_ENV=production webpack --config settings/webpack.prod.config.js --mode=production",
-		"build-preview": "cross-env NODE_ENV=preview webpack --config settings/webpack.build-preview.config --mode=development",
-		"wp-build": "cross-env NODE_ENV=wp webpack --config settings/webpack.wp-build.config.js",
 		"wp-dev": "cross-env NODE_ENV=wp webpack --config settings/webpack.wp-dev.config.js --watch",
 		"stats": "webpack --config settings/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
 		"prepare": "npx husky install",
