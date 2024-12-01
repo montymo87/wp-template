@@ -1,0 +1,63 @@
+//---------------------------------------------sections
+.section {
+	@include flex_block(row, wrap, center, center, center);
+	position: relative;
+
+	min-width: 100vw;
+	height: 100vh;
+
+	font-size: 1rem;
+}
+
+.race-wrapper {
+	overflow: hidden;
+}
+
+.race {
+	@include flex_block(row, nowrap, flex-start, center, center);
+	position: relative;
+	// overflow-x: scroll;
+	width: max-content;
+
+	section {
+		height: 100vh;
+		width: 100vw;
+
+		&:nth-child(1) {
+			background: red;
+		}
+		&:nth-child(1) {
+			background: red;
+		}
+		&:nth-child(2) {
+			background: rgb(0, 255, 34);
+		}
+		&:nth-child(3) {
+			background: rgb(0, 8, 255);
+		}
+		&:nth-child(4) {
+			background: rgb(255, 0, 200);
+		}
+		&:nth-child(5) {
+			background: rgb(255, 225, 0);
+		}
+	}
+}
+
+.test {
+	height: 100vh;
+	background: black;
+	color: $white;
+	font-size: 8rem;
+}
+
+.section_in {
+	max-width: $page_width;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 7rem;
+	font-weight: 700;
+}
