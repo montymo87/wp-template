@@ -7,6 +7,7 @@
 2. Install npm packages
 
 `npm i` or `npm ci`
+if u use node version 18> try `npm i --legacy-peer-deep`
 
 3. Let's code!
 
